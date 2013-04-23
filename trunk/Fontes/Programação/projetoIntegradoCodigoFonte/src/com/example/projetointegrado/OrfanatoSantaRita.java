@@ -9,6 +9,8 @@ import android.view.Window;
 
 public class OrfanatoSantaRita extends Activity
 {
+	MainActivity menu = new MainActivity();
+
 	protected void onCreate(Bundle savedInstanceState) 
 	{
 		super.onCreate(savedInstanceState);
@@ -19,8 +21,18 @@ public class OrfanatoSantaRita extends Activity
 	
 	public void back(View v)
 	{
-		Intent i = new Intent();
-		i.setClass(this,ClinicaIbmr.class);
-		startActivity(i);		
+		if (menu.campanha_top3 == true)
+		{
+			Intent i = new Intent();
+			i.setClass(this,MainActivity.class);
+			startActivity(i);		
+			menu.campanha_top3 = false;
+		}
+		else
+		{
+			Intent i = new Intent();
+			i.setClass(this,ClinicaIbmr.class);
+			startActivity(i);		
+		}
 	}
 }

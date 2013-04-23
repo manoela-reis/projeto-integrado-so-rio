@@ -21,41 +21,52 @@ public final class R {
         public static final int activity_vertical_margin=0x7f040001;
     }
     public static final class drawable {
-        public static final int greenpeace=0x7f020000;
-        public static final int ic_launcher=0x7f020001;
-        public static final int jovens_embaixadores=0x7f020002;
-        public static final int pegada_ecologica=0x7f020003;
-        public static final int titulo_greenpeace=0x7f020004;
-        public static final int wwf=0x7f020005;
+        public static final int abrigo_tereza=0x7f020000;
+        public static final int bgcongrats=0x7f020001;
+        public static final int bolsa_formacao=0x7f020002;
+        public static final int ciencia_sem_fronteiras=0x7f020003;
+        public static final int clinica_ibmr_mente=0x7f020004;
+        public static final int greenpeace=0x7f020005;
+        public static final int ic_launcher=0x7f020006;
+        public static final int jovens_embaixadores=0x7f020007;
+        public static final int orfanato_santa_rita=0x7f020008;
+        public static final int pegada_ecologica=0x7f020009;
+        public static final int testando=0x7f02000a;
+        public static final int titulo_greenpeace=0x7f02000b;
+        public static final int titulo_jovens_embaixadores=0x7f02000c;
+        public static final int wwf=0x7f02000d;
     }
     public static final class id {
-        public static final int Button01=0x7f080008;
-        public static final int Button02=0x7f080003;
-        public static final int Button03=0x7f080005;
-        public static final int Button04=0x7f080006;
-        public static final int Button05=0x7f080007;
-        public static final int action_settings=0x7f08000d;
+        public static final int Button01=0x7f08000b;
+        public static final int Button02=0x7f080008;
+        public static final int Button03=0x7f080006;
+        public static final int Button04=0x7f080005;
+        public static final int Button05=0x7f080004;
+        public static final int Button07=0x7f080009;
+        public static final int action_settings=0x7f08000f;
         public static final int button1=0x7f080001;
         public static final int button2=0x7f080002;
-        public static final int gallery1=0x7f08000c;
-        public static final int imageButton1=0x7f080004;
-        public static final int imageView1=0x7f08000b;
-        public static final int imageView2=0x7f08000a;
-        public static final int textView1=0x7f080000;
-        public static final int textView2=0x7f080009;
+        public static final int gallery1=0x7f08000d;
+        public static final int greenpeace=0x7f080007;
+        public static final int imageButton1=0x7f080003;
+        public static final int imageView1=0x7f080000;
+        public static final int imageView2=0x7f08000c;
+        public static final int textView1=0x7f08000e;
+        public static final int wwf=0x7f08000a;
     }
     public static final class layout {
-        public static final int abrigo_tereza_de_jesus=0x7f030000;
-        public static final int activity_main=0x7f030001;
-        public static final int bolsa_formacao=0x7f030002;
-        public static final int ciencia_sem_fronteiras=0x7f030003;
-        public static final int clinica_ibmr=0x7f030004;
-        public static final int green_peace=0x7f030005;
-        public static final int jovens_embaixadores=0x7f030006;
-        public static final int orfanato_santa_rita=0x7f030007;
-        public static final int pegada_ecologica=0x7f030008;
-        public static final int por_min=0x7f030009;
-        public static final int wwf=0x7f03000a;
+        public static final int abrigo_tereza=0x7f030000;
+        public static final int abrigo_tereza_de_jesus=0x7f030001;
+        public static final int activity_main=0x7f030002;
+        public static final int bolsa_formacao=0x7f030003;
+        public static final int ciencia_sem_fronteiras=0x7f030004;
+        public static final int clinica_ibmr=0x7f030005;
+        public static final int green_peace=0x7f030006;
+        public static final int jovens_embaixadores=0x7f030007;
+        public static final int orfanato_santa_rita=0x7f030008;
+        public static final int pegada_ecologica=0x7f030009;
+        public static final int por_min=0x7f03000a;
+        public static final int wwf=0x7f03000b;
     }
     public static final class menu {
         public static final int main=0x7f070000;

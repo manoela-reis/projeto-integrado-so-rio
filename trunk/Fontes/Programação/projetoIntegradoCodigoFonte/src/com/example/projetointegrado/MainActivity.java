@@ -12,6 +12,9 @@ import android.view.Window;
 public class MainActivity extends Activity 
 {
 	public boolean campanha_active = false;
+	public static boolean campanha_top1 = false;
+	public static boolean campanha_top2 = false;
+	public static boolean campanha_top3 = false;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) 
@@ -21,7 +24,7 @@ public class MainActivity extends Activity
 	    setVolumeControlStream(AudioManager.STREAM_MUSIC);
 		setContentView(R.layout.activity_main);
 	}
-
+	
 	// Por mim
 	public void click_Mim(View v)
 	{
@@ -64,6 +67,30 @@ public class MainActivity extends Activity
 		}
 	}
 	
+	public void top1 (View v)
+	{
+		Intent i = new Intent();
+		i.setClass(this, JovensEmbaixadores.class);
+		startActivity(i);
+		campanha_top1 = true;
+	}
+	
+	public void top2 (View v)
+	{
+		Intent i = new Intent();
+		i.setClass(this, PegadaEcologica.class);
+		startActivity(i);
+		campanha_top2 = true;
+	}
+	
+	public void top3 (View v)
+	{
+		Intent i = new Intent();
+		i.setClass(this, OrfanatoSantaRita.class);
+		startActivity(i);
+		campanha_top3 = true;
+	}
+
 	// Sair
 	public void Quit(View v)
 	{

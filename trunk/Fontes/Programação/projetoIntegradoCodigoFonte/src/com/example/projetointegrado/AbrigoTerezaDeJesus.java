@@ -15,7 +15,7 @@ public class AbrigoTerezaDeJesus extends Activity
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 	    setVolumeControlStream(AudioManager.STREAM_MUSIC);
-		setContentView(R.layout.abrigo_tereza_de_jesus);
+		setContentView(R.layout.abrigo_tereza);
 	}
 	
 	public void back(View v)

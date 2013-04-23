@@ -9,6 +9,7 @@ import android.view.Window;
 
 public class JovensEmbaixadores extends Activity
 {
+	MainActivity menu = new MainActivity();
 	protected void onCreate(Bundle savedInstanceState) 
 	{
 		super.onCreate(savedInstanceState);
@@ -19,9 +20,20 @@ public class JovensEmbaixadores extends Activity
 	
 	public void back(View v)
 	{
-		Intent i = new Intent();
-		i.setClass(this,CienciaSemFronteiras.class);
-		startActivity(i);		
+		if (menu.campanha_top1 == true)
+		{
+			Intent i = new Intent();
+			i.setClass(this,MainActivity.class);
+			startActivity(i);
+			menu.campanha_top1 = false;
+		}
+		
+		else 
+		{
+			Intent i = new Intent();
+			i.setClass(this,CienciaSemFronteiras.class);
+			startActivity(i);
+		}
 	}
 	
 	public void go_to(View v)
