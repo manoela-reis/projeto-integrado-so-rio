@@ -9,6 +9,8 @@ import android.view.Window;
 
 public class PegadaEcologica extends Activity
 {
+	MainActivity menu = new MainActivity();
+	
 	protected void onCreate(Bundle savedInstanceState) 
 	{
 		super.onCreate(savedInstanceState);
@@ -19,9 +21,21 @@ public class PegadaEcologica extends Activity
 	
 	public void back(View v)
 	{
-		Intent i = new Intent();
-		i.setClass(this,WWF.class);
-		startActivity(i);		
+		if (menu.campanha_top2 == true)
+		{
+			Intent i = new Intent();
+			i.setClass(this,MainActivity.class);
+			startActivity(i);
+			menu.campanha_top2 = false;
+		}
+		
+		else
+		{
+			Intent i = new Intent();
+			i.setClass(this,WWF.class);
+			startActivity(i);
+		}
+		
 	}
 
 }

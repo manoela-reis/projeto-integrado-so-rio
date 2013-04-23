@@ -9,74 +9,16 @@
     tools:context=".MainActivity" >
 
     <Button
-        android:id="@+id/Button02"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/imageButton1"
-        android:layout_below="@+id/button1"
-        android:minWidth="90dp"
-        android:text="Top5" />
-
-    <Button
         android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
+        android:layout_alignParentTop="false"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="23dp"
+        android:clickable="false"
+        android:focusable="false"
         android:minWidth="90dp"
         android:text="Sôrio" />
-
-    <Button
-        android:id="@+id/Button03"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/Button02"
-        android:layout_marginBottom="14dp"
-        android:layout_toLeftOf="@+id/button1"
-        android:minWidth="90dp"
-        android:onClick="click_Mim"
-        android:text="PorMim" />
-
-    <Button
-        android:id="@+id/Button04"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/Button03"
-        android:layout_alignTop="@+id/Button02"
-        android:layout_marginTop="25dp"
-        android:minWidth="90dp"
-        android:onClick="click_Outro"
-        android:text="Pelo Outro" />
-
-    <Button
-        android:id="@+id/Button05"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/Button04"
-        android:layout_below="@+id/Button04"
-        android:minWidth="90dp"
-        android:onClick="click_Mundo"
-        android:text="Pelo Mundo" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/Button02"
-        android:layout_below="@+id/Button02"
-        android:onClick="Quit"
-        android:text="Sair" />
-
-    <Button
-        android:id="@+id/Button01"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/Button05"
-        android:minWidth="90dp"
-        android:onClick="click_TodasCampanhas"
-        android:text="Todas as campanhas" />
 
     <ImageButton
         android:id="@+id/imageButton1"
@@ -89,5 +31,101 @@
         android:minHeight="100dp"
         android:minWidth="260dp"
         android:src="@drawable/ic_launcher" />
+
+    <Button
+        android:id="@+id/Button05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Button04"
+        android:layout_centerVertical="true"
+        android:minWidth="90dp"
+        android:onClick="click_Mundo"
+        android:text="Pelo Mundo" />
+
+    <Button
+        android:id="@+id/Button04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Button05"
+        android:layout_alignLeft="@+id/Button03"
+        android:minWidth="90dp"
+        android:onClick="click_Outro"
+        android:text="Pelo Outro" />
+
+    <Button
+        android:id="@+id/Button03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Button04"
+        android:layout_toLeftOf="@+id/button1"
+        android:minWidth="90dp"
+        android:onClick="click_Mim"
+        android:text="PorMim" />
+
+    <Button
+        android:id="@+id/greenpeace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/Button02"
+        android:layout_below="@+id/Button02"
+        android:minHeight="18dip"
+        android:minWidth="24dip"
+        android:onClick="top1"
+        android:tag="jovens"
+        android:text="Jovens Emb." />
+
+    <Button
+        android:id="@+id/Button02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button1"
+        android:layout_alignBottom="@+id/button1"
+        android:layout_alignLeft="@+id/button2"
+        android:clickable="false"
+        android:focusable="false"
+        android:minWidth="90dp"
+        android:text="Top 5" />
+
+    <Button
+        android:id="@+id/Button07"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/wwf"
+        android:layout_below="@+id/wwf"
+        android:minHeight="18dip"
+        android:onClick="top3"
+        android:text="Santa Rita" />
+
+    <Button
+        android:id="@+id/wwf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/greenpeace"
+        android:layout_below="@+id/greenpeace"
+        android:minHeight="18dip"
+        android:onClick="top2"
+        android:text="Pegada Ecológica" />
+
+    <Button
+        android:id="@+id/Button01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageButton1"
+        android:layout_alignLeft="@+id/imageButton1"
+        android:clickable="false"
+        android:minHeight="28dip"
+        android:minWidth="90dp"
+        android:onClick="click_TodasCampanhas"
+        android:text="Todas as campanhas" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageButton1"
+        android:layout_toRightOf="@+id/Button01"
+        android:minHeight="28dip"
+        android:onClick="Quit"
+        android:text="Sair" />
 
 </RelativeLayout>
